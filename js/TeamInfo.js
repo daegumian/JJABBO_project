@@ -296,7 +296,7 @@ address.onclick = function() {
         window.open('TeamMap/NC_map.html', 'minimap', 'width=640px, height= 360px, left=500px, top=20px');
     } else if(event.target.parentElement.parentElement.parentElement.previousElementSibling.firstElementChild.innerHTML=='삼성 라이온즈') {
         window.open('TeamMap/SS_map.html', 'minimap', 'width=640px, height= 360px, left=500px, top=20px');
-    } else if(event.target.parentElement.parentElement.parentElement.previousElementSibling.firstElementChild.innerHTML=='롯데 자이언트') {
+    } else if(event.target.parentElement.parentElement.parentElement.previousElementSibling.firstElementChild.innerHTML=='롯데 자이언츠') {
         window.open('TeamMap/LOTTE_map.html', 'minimap', 'width=640px, height= 360px, left=500px, top=20px');
     } else if(event.target.parentElement.parentElement.parentElement.previousElementSibling.firstElementChild.innerHTML=='두산 베어스') {
         window.open('TeamMap/OB_map.html', 'minimap', 'width=640px, height= 360px, left=500px, top=20px');
