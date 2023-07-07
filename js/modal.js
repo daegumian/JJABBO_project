@@ -1,5 +1,3 @@
-
-
 function addCookie(name, value) {
 
     //쿠키 생성

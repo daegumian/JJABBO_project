@@ -1,17 +1,17 @@
 @font-face {
     font-family: 'KBO';
-    src: url('/12프로젝트/css/KBO-Dia-Gothic_bold.woff')
+    src: url('/JJABBO_project/css/KBO-Dia-Gothic_bold.woff')
 }
 
 @font-face {
 
     font-family: 'KBO';
-    src: url('/12프로젝트/css/KBO-Dia-Gothic_light.woff')
+    src: url('/JJABBO_project/css/KBO-Dia-Gothic_light.woff')
 }
 
 @font-face {
     font-family: 'KBO';
-    src: url('/12프로젝트/css/KBO-Dia-Gothic_medium.woff')
+    src: url('/JJABBO_project/css/KBO-Dia-Gothic_medium.woff')
 }
 
 /* 위 쪽 */
@@ -163,7 +163,7 @@ header {
     position: relative;
     overflow: hidden;
     height: 847px;
-    background-image: url(/12프로젝트/img/bgKBO.jpg);
+    background-image: url(/JJABBO_project/img/bgKBO.jpg);
 
 }
 
