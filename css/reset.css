@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'kbo';
+    src: url('../fonts/KBO\ Dia\ Gothic_medium.ttf') format('truetype');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    font-family: 'kbo';
+    
+}
+
+
+article {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body, html { 
+    font-family: 'Orbit', sans-serif;
+}
+
+ul, li, ol, dd, dl {
+    list-style: none;
+}
+
+input, textarea, select, button {
+    /* 브라우저들의 user agent design 초기화 */
+    -webkit-appearance: none; /* 사파리, 구글 */
+    -moz-appearance: none; /* 파이어폭스 */
+    appearance: auto;
+    border: none;
+}
+
