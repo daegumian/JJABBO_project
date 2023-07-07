@@ -1,0 +1,437 @@
+/*fonts.css*/
+@font-face {
+    font-family: 'KBO-Dia-Gothic-Medium';
+    /*font 이름*/
+    font-style: 'normal';
+    /* font 스타일 정의 (기울임, 일반) */
+    font-weight: 400;
+    /* font 굵기 정의 */
+    /* IE9 Compat Modes */
+    src: url('KBO Dia Gothic_medium.ttf') format('truetype'),
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'KBO-Dia-Gothic-Medium';
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.main-container {
+    width: 1090px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.main-container:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.left-side {
+    float: left;
+    width: 175px;
+    padding: 10px;
+    color: gray
+}
+
+.left-side .left-list>li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.left-side .up-side {
+    border-bottom: 5px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+.right-side {
+    float: right;
+    width: 838px;
+}
+
+.right-side .choose-league {
+    margin-bottom: 30px;
+}
+
+.right-side .choose-league>ul>li {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.title {
+    padding-bottom: 20px;
+}
+
+.right-side .choose-league>ul>li>a {
+    padding: 5px;
+}
+
+.right-side .content-map .content-area {
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.right-side .content-area .map-area {
+    width: 506px;
+    height: 584px;
+    float: left;
+    border-radius: 13px;
+    position: relative;
+    background-color: #f0f0f0;
+    background-image: url(img/bg_map.png);
+    background-repeat: no-repeat;
+    background-position: 20px 20px;
+}
+
+
+
+.stadium-list {
+    width: 120px;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+}
+
+.stadium {
+    font-size: 12px;
+    padding: 0 6px 16px;
+}
+
+.stadium:hover {
+    cursor: pointer;
+}
+
+.stadium.select {
+    transform: scale(1.1);
+    transition: .9s;
+}
+
+.stadium.select dl {
+    transform: scale(1.1);
+    transition: .9s;
+}
+
+.stadium dl {
+    border-radius: 10px 10px 0 0;
+}
+
+.stadium dt {
+    border-radius: 10px 10px 0 0;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.stadium dd {
+    border-radius: 0 0 10px 10px;
+    background-color: white;
+    color: black;
+    height: 60px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+
+.stadium-name {
+    color: white;
+}
+
+.dsjamsil {
+    background-color: #131230;
+}
+
+.lgjamsil {
+    background-color: #8a1a4d;
+}
+
+.gochuck {
+    background-color: #820023;
+}
+
+.wizpark {
+    background-color: #000000;
+}
+
+.eagles {
+    background-color: #e76c1b;
+}
+
+.munhak {
+    background-color: #c82430;
+}
+
+.sajik {
+    background-color: #041E42;
+}
+
+.lions {
+    background-color: #124ca3;
+}
+
+.ncpark {
+    background-color: #315288;
+}
+
+.champil {
+    background-color: #EA0029;
+}
+
+
+.right-side .content-area .schedule-area {
+    float: right;
+    width: 314px;
+    height: 584px;
+    border-radius: 13px;
+    text-align: center;
+    color: white;
+    opacity: .92;
+    margin-left: 15px;
+}
+
+.away {
+    float: left;
+}
+
+.home {
+    float: right;
+}
+
+.schedule-area .top {
+    opacity: 1;
+}
+
+
+.schedule-area .top .info-area {
+    padding: 30px;
+}
+
+.schedule-area .top .logo {
+    padding: 0 20px;
+}
+
+.schedule-area .bottom {
+    margin-top: 40px;
+    height: 382px;
+}
+
+.etc {
+    width: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 35px;
+}
+
+
+.etc div {
+    float: left;
+    padding: 10px;
+    width: 33.3333%;
+}
+
+.etc div>p {
+    font-size: 12px;
+}
+
+.lowerside {
+    margin-top: 20px;
+}
+
+.chooseDay {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.chooseDay .day {
+    overflow: hidden;
+    width: 70%;
+    display: inline-block;
+}
+
+.chooseDay .day li {
+    float: left;
+    border: 1px solid black;
+    padding: 10px 5px;
+}
+
+
+.weather-table {
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.weather-table table {
+    width: 100%;
+}
+
+.weather-table th,
+.weather-table td {
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+    display: table-cell;
+}
+
+.weather-table tbody tr:first-child {
+    background-color: #3c4fe5;
+    color: white;
+    height: 30px;
+}
+
+.dot-area a {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+}
+
+.dot-area a i {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    display: block;
+}
+
+
+.GC {
+    top: 133px;
+    left: 229px;
+}
+
+.GC i {
+    background-color: #820023;
+}
+
+.JS {
+    top: 130px;
+    left: 247px;
+}
+
+.JS i {
+    background-color: #131230;
+}
+.JS.today{
+    background-image: url(img/flag_JS_OB.gif);
+    width: 27px;
+    height: 32px;
+    top: 114px;
+    left: 243px;
+}
+.JS.today i {
+    background-color: transparent;
+}
+
+
+.IC {
+    top: 140px;
+    left: 209px;
+}
+
+.IC i {
+    background-color: #c82430;
+}
+
+.SW {
+    top: 158px;
+    left: 240px;
+}
+.SW i {
+    background-color: #000000;
+}
+.SW.today{
+    background-image: url(img/flag_SW.gif);
+    width: 27px;
+    height: 32px;
+    top: 142px;
+    left: 236px;
+}
+.SW.today i {
+    background-color: transparent;
+}
+
+.DJ {
+    top: 257px;
+    left: 277px;
+}
+
+.DJ i {
+    background-color: #e76c1b;
+}
+
+.DJ.today {
+    background-image: url(img/flag_DJ.gif);
+    width: 27px;
+    height: 32px;
+    top: 239px;
+    left: 273px;
+}
+
+.DJ.today i {
+    background-color: transparent;
+   
+}
+
+.DG {
+    top: 308px;
+    left: 386px;
+}
+.DG i {
+    background-color: #124ca3;
+}
+
+.GJ {
+    top: 380px;
+    left: 228px;
+}
+.GJ i {
+    background-color: #EA0029;
+}
+
+.BS {
+    top: 379px;
+    left: 412px;
+}
+.BS i {
+    background-color: #041E42;
+}
+.BS.today{
+    background-image: url(img/flag_SJ.gif);
+    width: 27px;
+    height: 32px;
+    top: 362px;
+    left: 407px;
+}
+.BS.today i {
+    background-color: transparent;
+}
+
+.CW {
+    top: 379px;
+    left: 379px;
+}
+
+.CW i{
+    background-color: #315288;
+}
+.CW.today{
+    background-image: url(img/flag_CW.gif);
+    width: 27px;
+    height: 32px;
+    top: 363px;
+    left: 376px;
+}
+.CW.today i {
+    background-color: transparent;
+}
