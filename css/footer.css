@@ -1,0 +1,118 @@
+footer {
+    background-color: #002063;
+    display: block;
+}
+
+footer #fnb {
+    border-top: 1px solid #4e4e4e;
+    width: 1090px;
+    margin: 0 auto;
+    padding-left: 300px;
+}
+
+footer #fnb .fnb-wrap {
+    position: relative;
+    padding: 20px 0 10px
+}
+
+footer #fnb .fnb-wrap .fnb-list {
+    overflow: hidden;
+    margin-left: 152px
+}
+
+footer #fnb .fnb-wrap .fnb-list li {
+    float: left;
+    margin-right: 50px
+}
+
+footer #fnb .fnb-wrap .fnb-list li a {
+    display: block;
+    color: #fff;
+    font-size: 13px
+}
+
+footer #fnb .fnb-wrap .fnb-list li.privacy a {
+    font-weight: 700;
+    color: #00bece
+}
+
+footer #fnb .fnb-wrap .btn-kbo {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    font-size: 13px;
+    font-weight: 700
+}
+
+footer #fnb .fnb-wrap .btn-kbo a {
+    position: relative;
+    color: #fff;
+    padding-right: 25px
+}
+
+footer #fnb .fnb-wrap .btn-kbo a:after {
+    content: "\002B";
+    position: absolute;
+    top: -2px;
+    right: 0;
+    font-size: 17px;
+    font-family: ng;
+    color: #fff
+}
+
+footer #kboInfo {
+    position: relative;
+    padding: 0 0 30px;
+    color: #fff
+}
+
+.wrapping {
+    position: relative;
+    width: 1090px;
+    margin: 0, auto;
+}
+
+.wrapping::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+footer #kboInfo h2 {
+    float: left;
+    padding: 0 80px 0 30px
+}
+
+footer #kboInfo .kbo-info {
+    float: left;
+    width: 750px;
+    margin-top: 22px
+}
+
+footer #kboInfo .address,footer #kboInfo address .address02 {
+    float: left;
+    margin-right: 80px
+}
+
+footer #kboInfo address p {
+    color: #b3bcce
+}
+
+footer #kboInfo address dl dt {
+    float: left;
+    width: 120px;
+    color: #a0a0a0
+}
+
+footer #kboInfo address dl dd {
+    float: left;
+    width: 170px;
+    color: #dadada
+}
+
+footer #kboInfo .copyright {
+    float: left;
+    color: #687898
+}
+

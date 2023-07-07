@@ -1,0 +1,31 @@
+
+.slide{
+  position: relative;
+  
+}
+
+
+.btn_box{
+  position: relative;
+  position: absolute;
+  left: 37%;
+  bottom: 15px;
+}
+
+.btn_inner{
+  box-sizing: border-box;
+  border: transparent;
+  float: left;
+  
+  
+}
+
+
+.btn {
+  
+  background-color:transparent;
+  border-color: transparent;
+  color: gray;
+  font-size: 20px;
+
+}

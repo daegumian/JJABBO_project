@@ -1,0 +1,333 @@
+@font-face {
+    font-family: 'KBO';
+    src: url('/12프로젝트/css/KBO-Dia-Gothic_bold.woff')
+}
+
+@font-face {
+
+    font-family: 'KBO';
+    src: url('/12프로젝트/css/KBO-Dia-Gothic_light.woff')
+}
+
+@font-face {
+    font-family: 'KBO';
+    src: url('/12프로젝트/css/KBO-Dia-Gothic_medium.woff')
+}
+
+/* 위 쪽 */
+
+ol,
+ul {
+    list-style: none;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+    font-family: kbo;
+    text-align: center;
+}
+
+header {
+    height: 100px;
+    border-bottom: 1px solid #0c265d;
+}
+
+.inner {
+    margin: 0 auto;
+    width: 1050px;
+    position: relative;
+    overflow: hidden;
+}
+
+.inner>.logo {
+    float: left;
+    margin-right: 100px;
+    margin-bottom: 50px;
+}
+
+.inner>.logo>a {
+    height: 75px;
+    width: 75px;
+}
+
+
+.inner>.navi {
+    position: relative;
+    float: right;
+    margin-top: 52px;
+    overflow: hidden;
+    
+
+}
+
+.inner>.navi>.navi_inner {
+
+    overflow: hidden;
+    position: relative;
+    float: left;
+
+}
+
+.inner>.navi>.navi_inner>li {
+
+    float: left;
+    position: relative;
+    width: 82px;
+    margin-right: 56px;
+    display: block;
+    text-decoration: none;
+
+}
+
+.inner>.navi>.navi_inner>li>a {
+
+    margin-right: 20px;
+    font-size: 15px;
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    font-family: kbo;
+    font-weight: bold;
+
+}
+
+
+.inner>.login {
+
+    position: absolute;
+    right: 10px;
+    top: 0;
+
+}
+
+.inner>.login>.login_inner {
+    overflow: hidden;
+}
+
+.inner>.login>.login_inner>li {
+
+    display: inline-block;
+    text-decoration: none;
+
+}
+
+.inner>.login>.login_inner>.left {
+    float: left;
+}
+
+.inner>.login>.login_inner>.right {
+    float: right;
+}
+
+.inner>.login>.login_inner>li>a {
+
+    display: inline-block;
+    text-decoration: none;
+
+}
+
+
+.inner>.login>.login_inner>.kboHome>a {
+    display: inline-block;
+    width: 151px;
+    margin-top: 2px;
+    padding: 4px 0 3px;
+    background: #755abd;
+    color: #fff;
+    border-radius: 9px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+.inner>.login>.login_inner>.kboLogin {
+
+    width: 51px;
+    height: 23px;
+    margin-left: 15px;
+    line-height: 21px;
+    border: 1px solid #cdcdcd;
+    vertical-align: middle;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+/* 중간 */
+
+#container .title_box {
+
+    position: relative;
+    overflow: hidden;
+    height: 847px;
+    background-image: url(/12프로젝트/img/bgKBO.jpg);
+
+}
+
+.title_box>.title {
+    text-align: center;
+}
+
+.title_box>.title>.title_inner {
+    margin-top: 0;
+}
+
+
+.title_box>.title>.title_inner>img {
+    vertical-align: center;
+}
+
+.title_box>.host {
+    margin-top: 8px;
+    text-align: center;
+}
+
+.title_box>.host>img {
+    vertical-align: top;
+}
+
+.title_box>.plan {
+    overflow: hidden;
+    text-align: center;
+    
+}
+
+.title_box>.plan>li {
+    display: block;
+    text-decoration: none;
+
+}
+
+.title_box>.plan>.left {
+    float: left;
+    margin-left: 31%;
+}
+
+.title_box>.plan>.right {
+    float: right;
+    margin-right: 31.5%;
+}
+
+.title_box>.plan>li>img {
+    border-radius: 9px;
+}
+
+#contents {
+    text-align: center;
+    font-family: kbo;
+    font-size: 12px;
+}
+
+.allstar-list {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    width: 1020px;
+    margin-left: 20%;
+}
+
+.allstar-list h3 {
+    display: block;
+    text-align: left;
+    border: 0;
+    margin-left: 56px;
+    font-size: 15px;
+    margin-top: 50px;
+}
+
+
+.allstar-list ul,li {
+    overflow: hidden;
+}
+
+.allstar-list ul>.player {
+    float: left;
+    overflow: hidden;
+}
+
+.allstar-list ul>.player>span {
+    display: block;
+}
+
+.allstar-list ul>.player .photo {
+    float: left;
+    overflow: hidden;
+}
+
+.allstar-list ul>.player .photo>img {
+    float: left;
+}
+
+.allstar-list ul>.player .player-info {
+    float: left;
+    overflow: hidden;
+    width: 116px;
+    height: 82px;
+    padding-right: 50px;
+}
+
+.allstar-list ul>.player .player-info .emb {
+    display: block;
+}
+
+.allstar-list ul>.player .player-info .num {
+    display: block;
+}
+
+.allstar-list ul>.player .player-info .name {
+    display: block;
+}
+
+.allstar-list ul>.player .mvp-info {
+    float: left;
+    overflow: hidden;
+    width: 228px;
+}
+
+.allstar-list ul>.player .mvp-info .total-point {
+    display: inline-block;
+    margin-top: 9px;
+    padding: 3px 9px;
+    background: #f6ae00;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.allstar-list ul>.player .mvp-info .detail-point {
+    display: inline-block;
+    padding: 9px 0;
+    font-size: 12px;
+
+}
+
+.allstar-list ul>.player .mvp-info .etc {
+    display: inline-block;
+    color: #f6ae00;
+    font-size: 14px;
+    font-weight: 700;
+
+}
+
+
+
+.allstar-list ul> .nanum {
+
+    float: right;
+    border: 0;
+
+}
+
+footer > a{
+    text-align: center;
+    border-top: 1px solid lightgray;
+    padding: 50px;
+    display: block;
+    font-size: 18px;
+    font-weight: 1px;
+}

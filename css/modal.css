@@ -1,0 +1,68 @@
+a, img{
+    border: 0;
+}
+
+img{
+    vertical-align: top;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    touch-action: none;
+    text-align: center;
+    position: absolute;
+    z-index: 9999; 
+    
+}
+
+.modal .modal_box{
+    overflow: hidden;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+
+}
+
+
+.modal .modal_box .youtube iframe{
+    width: 800px;
+    height: 450px;
+    left: 0px;
+    top: 0px;
+
+}
+
+
+.modal .modal_box .btn_left{
+    float: left;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.modal .modal_box .btn_right{
+    float: right;
+    overflow: hidden;
+    margin-top: 20px;
+
+}
+
+.modal p label{
+    overflow: hidden;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+    background-color: transparent;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.hidden{
+
+    display: none;
+}
