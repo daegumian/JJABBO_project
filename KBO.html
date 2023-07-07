@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="css/slideCenter.css">
 
   <script src="js/modal.js"></script>
+
+  <script src="js/kakao.min.js"></script>
   
 
   <style>
@@ -96,7 +98,8 @@
               올스타전 홈페이지 바로가기</a>
           </li>
           <li class="right kboLogin">
-            <a href="">로그인</a>
+            <a id="kakao-login-btn" href="javascript:loginWithKakao()" style="color: black;">로그인</a>
+            <p id="token-result"></p>
           </li>
         </ul>
 
@@ -291,72 +294,22 @@
     };
   </script>
 
-  <!-- 카카오 로그인 -->
 
-  리다이렉트된 결과(서버 상태여야 한다.)
-  <script>
-      //1. 카카오 sdk 초기화
-      /* Kakao.init('c0b1b6ec421dcbaf0d1a54091f014d26');
-      Kakao.isInitialized(); */
+<script>
+  //1. 카카오 sdk초기화
+  Kakao.init('c0b1b6ec421dcbaf0d1a54091f014d26');
+  Kakao.isInitialized();
 
-      //카카오 서버에서 인가 코드를 url주소를 담아서 보내줌.
-      //3. 인가코드 얻기
-      var urlSearch = new URLSearchParams(location.search);
-      var value = urlSearch.get("code");
+  //2. 인가서버 창 띄우기
 
-      //4. 토큰발급 받기
-      if (value != null) {
-          ajax();
-      }
+  function loginWithKakao() {
+      Kakao.Auth.authorize({
+          redirectUri: 'http://127.0.0.1:5500/JJABBO_project/KBO.html',
+      });
+  }
 
-      function ajax() {
 
-          var url = "http://127.0.0.1:5500/11API/index03.html";
-          var key = "4a09ae9fd89a60722da0c07fcc81dfde";
-
-          var data = "grant_type=authorization_code" +
-              "&client_id=" + key +
-              "&redirect_uri=" + url +
-              "&code=" + value;
-
-          //토큰 요청
-          fetch('https://kauth.kakao.com/oauth/token', {
-              method: "post",
-              headers: {
-                  "Content-Type": 'application/x-www-form-urlencoded;charset=utf-8', //폼형식
-              },
-              body: data
-          }).then(function (response) {
-              return response.json();
-          }).then(function (data) {
-              //브라우저 종료시에 모두 삭제
-              //쿠키 & 세션스토리지에 토큰 값 저장 가능
-              sessionStorage.setItem("kakao_access", data.access_token);
-
-              //sdk에 access_token 저장
-              // Kakao.Auth.setAccessToken(data.access_token);//
-
-              //사용자 정보 API호출하기
-              getUser(data.access_token);
-          });
-      }
-
-      //5. 토큰기반으로 API호출하기 JS로 처리
-      function getUser(token) {
-          fetch('https://kapi.kakao.com/v2/user/me', {
-              method: 'post',
-              headers: {
-                  'Authorization': 'Bearer ' + token,
-                  'Content-type': 'application/x-www-form-urlencoded;charset=utf-8',
-              },
-
-          }).then(function (response) {
-              return response.json();
-          }).then(function (data) {
-              console.log(data);
-          })
-      }
-  </script>
+</script>
 
 
 </body>
